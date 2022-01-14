@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    </head>
+    <body>
+        <form action="/submit" method='post'>
+          <div class="container">
+            <h1>Text Encryption</h1>
+            <p>Please enter message and password.</p>
+            <hr>
+            <label><b>Encryption</b></label>
+            <input type="text" placeholder="Enter Message to encrypt" name="emsg" id="emsg">
+
+            <label><b>Decryption</b></label>
+            <input type="text" placeholder="Enter Message to encrypt" name="dmsg" id="dmsg">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <hr>
+            <button type="submit" class="registerbtn">Encrypt/Decrypt</button>
+          </div>
+        </form>
+    </body>
+</html>
